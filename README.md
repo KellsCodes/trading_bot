@@ -8,3 +8,4 @@ Inorder to enter a position, the bot runs through 4 filters to find an optimal e
 4. check for Exponential Moving Average crossing between the slow and fast moving averages
 When all filters return true, the trade is executed else the cycle is repeated until a favorable entry is obtained
 
+The Asset/Ticker to trade is obtained from user input
