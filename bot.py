@@ -1,1 +1,3 @@
-# Bot Schema definition
+# import needed libraries
+
+# initialize the logger
