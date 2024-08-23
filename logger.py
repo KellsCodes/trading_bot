@@ -31,4 +31,3 @@ def initialize_logger():
 
     # init message
     lg.info('Log initialized.')
-

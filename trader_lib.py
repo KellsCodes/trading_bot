@@ -1,7 +1,4 @@
-# define asset
-    # IN: keyboard
-    # OUT: string
-    
+
 # LOOP until timeout reached (ex. 2h)
 # POINT ECHO: INITIAL CHECK
 # check the position: ask the broker API if we have an open position with "asset"
