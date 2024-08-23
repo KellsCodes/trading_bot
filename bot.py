@@ -3,9 +3,6 @@ from trader_lib import *
 from logger import *
 import sys
 
-# initialize the logger
-initialize_logger()
-
 
 # check our trading account (blocked?, total amount?)
 def check_account_ok():
@@ -32,12 +29,25 @@ def clean_open_orders():
     lg.info("Closing orders complete")
 
 
-# define asset
-def get_ticker():
-    # Enter ticker with the keyboard
-    ticker = input("Write the ticker you want to operate with: ")
-    return ticker
-
 # execute trading bot
-    # IN: string (ticker)
-    # OUT: Boolean (True => success / False => falied)
+def main():
+
+    # initialize the logger
+    initialize_logger()
+
+    # check our trading account
+    check_account_ok()
+
+    # close current orders
+    clean_open_orders()
+
+    # define asset
+    ticker = input("Write the ticker you want to operate with: ")
+    
+    # run trading bot
+        # IN: string (ticker)
+        # OUT: Boolean (True => success / False => falied)
+
+
+if __name__ == '__main__':
+    main()
