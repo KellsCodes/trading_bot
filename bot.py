@@ -28,12 +28,15 @@ def clean_open_orders():
     for order in open_orders:
         # close order
         lg.info("Order %s closed" % str(order.id))
-        
+
     lg.info("Closing orders complete")
 
-# define asset ()
-    # IN: keyboard
-    # OUT: string
+
+# define asset
+def get_ticker():
+    # Enter ticker with the keyboard
+    ticker = input("Write the ticker you want to operate with: ")
+    return ticker
 
 # execute trading bot
     # IN: string (ticker)
